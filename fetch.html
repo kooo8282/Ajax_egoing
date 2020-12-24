@@ -19,13 +19,12 @@
         function callbackme(){
             console.log('response end');
         }
-        fetch('css').then(callbackme);
-        console.log(1);
-        console.log(1);
-        // result
-        // 1
-        // 1
-        // response end
+        fetch('css').then(function(response){
+            if(response.status == '404'){
+                alert('Not found')
+            };
+        });
+        
     ">
 </body>
 
