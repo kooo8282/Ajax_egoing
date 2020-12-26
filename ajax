@@ -1,0 +1,8 @@
+<h2>ajax</h2>
+<p>
+ajax is Asynchronous Javascript And Xml.<b>(비동기식 자바스크립트와 xml)</b><br>
+Ajax is a library of javascript, and that is a data update method for a part of web page without refreshing entire web page, using the XMLHttpRequest object in web borwser.
+</p>
+<p>
+Ajax를 한마디로 정의하자면 JavaScript를 사용한 비동기 통신, 클라이언트와 서버간에 XML 데이터를 주고받는 기술이라고 할 수 있겠습니다.
+</p>
