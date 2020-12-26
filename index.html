@@ -32,7 +32,18 @@
     }
     fetch('list').then(function(response){      
       response.text().then(function(text){
-          document.querySelector('#nav').innerHTML=text;
+        let tags='';
+        let items = text.split(',');
+        console.log(items);
+        for(let i=0; i<items.length; i++){
+          item= items[i].trim()
+          console.log(item);
+          let tag = `<li><a href="#!${item}" 
+                onclick="fetchPage('${item}');">${item}</a></li>`;
+          tags += tag;
+        }
+        document.querySelector('#nav').innerHTML=tags;
+        
         })
       });
   </script>
